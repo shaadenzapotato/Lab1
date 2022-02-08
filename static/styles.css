@@ -1,0 +1,65 @@
+  h1 {
+      color: black;
+      text-align: center;
+	  margin: 10px;
+  }
+
+  h3 {
+	  margin: 10px;
+
+  }
+  
+  table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 2px;
+}
+
+@media print{
+	.screen-only{
+		display:none;
+	}
+}
+
+@media (min-width: 500px){
+	body{
+		background-color: rgb(240, 240, 211);
+	}
+}
+
+@media (max-width: 499px){
+	body{
+		background-color: rgb(211, 248, 211);
+	}
+}
+
+h1:hover{
+	color: rgb(247, 126, 27);
+}
+
+::marker {
+	color: red;
+	
+}
+
+#keyword{
+	color: rgb(247, 126, 27);
+	font-size: 50px;
+}
+a{
+	color:black;
+}
+a:link{
+	background-color: rgb(247, 126, 27);
+}
+
+.row > div {
+	padding: 20px;
+	background-color: rgba(137, 139, 139, 0.384);
+	border: 2px solid black;
+}
+

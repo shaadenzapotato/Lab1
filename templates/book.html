@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+{{book.title}}
+{% endblock %}
+
+{% block body %}
+</br>
+<div style="text-align:center">
+<form action="{{ url_for('index')}}" method="post">
+    <button> Log out </button>
+</form>
+</div>
+</br>
+<div class="myDiv">
+	<div><strong>Author:</strong> {{book.author}}</br>
+    <strong>Year Published:</strong> {{book.year}}</br>
+    <strong>ISBN:</strong> {{book.isbn}}</br>
+    <strong>Google Average Rating: </strong>{{avgrating}}/5 </br>
+    <strong>Google Number of Ratings: </strong>{{numofrat}}</div>
+</br>
+    <form action="{{ url_for('book', book_id=book.isbn)}}" method="post">
+        <input type="integer" name="score" placeholder="Rate It ?/5">
+		<input type="text" name="review" placeholder="Enter Your Review">
+		<button> Submit </button>
+	</form>
+</br>
+    <div><strong>Reviews:</strong><div>
+   
+
+</br>
+</br>
+    <ul>
+        {% for rev in bookrev %}
+            <li> 
+                <p>{{rev.score}}/5, "{{rev.review}}" - {{rev.username}}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</div> 
+
+{% endblock %}

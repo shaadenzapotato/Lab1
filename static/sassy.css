@@ -1,0 +1,32 @@
+ul {
+  font-size: 14px;
+  color: black;
+}
+
+ol {
+  font-size: 18px;
+  color: black;
+}
+
+.myDiv {
+  font-size: 18px;
+  border: 5px outset #9c6b4a;
+  background-color: rgba(230, 220, 173, 0.616);
+  padding: 20px;
+  margin: 10px;
+}
+.myDiv p {
+  color: black;
+}
+.myDiv .section {
+  background-color: white;
+}
+
+.screen-only, .myDiv .section {
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=sassy.css.map */

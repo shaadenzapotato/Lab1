@@ -1,0 +1,39 @@
+$normaltextcolor: black;
+
+ul {
+    font-size: 14px;
+    color: $normaltextcolor;
+}
+
+ol {
+    font-size: 18px;
+    color: $normaltextcolor;
+}
+
+.myDiv {
+    font-size: 18px;
+    border: 5px outset rgb(156, 107, 74);
+	background-color: rgba(230, 220, 173, 0.616);
+	padding: 20px;
+	margin: 10px;
+    p {
+        color: $normaltextcolor;
+    }
+    .section {
+        background-color:white;
+        @extend %special;
+    }
+}
+
+
+%special{
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px;
+    text-align:center;
+}
+
+.screen-only {
+    @extend %special;
+}
+

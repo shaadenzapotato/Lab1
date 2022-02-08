@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+Log In or Sign Up:
+{% endblock %}
+
+{% block body %}
+<div class="myDiv">
+	<form action="{{ url_for('search')}}" method="post">
+		<input type="text" name="username" placeholder="Enter Your Username">
+		<input type="text" name="password" placeholder="Enter Your Password">
+		<button> Submit </button>
+	</form>
+</div>
+{% endblock %}
